@@ -6,7 +6,7 @@ function generate() {
         "- Bhagat Singh": '"Inqualab Zindabad"'
     }
     var authors=Object.keys(quotes);
-    var author=authors[Math.floor(Math.random()*quotes.length)];
+    var author=authors[Math.floor(Math.random()*authors.length)];
     var quote=quotes[author];
     document.getElementById("quote").innerHTML=quote;
     document.getElementById("author").innerHTML=author;
